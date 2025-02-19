@@ -24,7 +24,12 @@
         });
 
         function cargarMolecula(archivo) {
-            Jmol.script(jmolApp, `load https://ifp2301.github.io/visor-moleculas-jmol/${archivo}; wireframe 0.15; spacefill 20%;`);
+    Jmol.script(jmolApp, `load https://ifp2301.github.io/visor-moleculas-jmol/${archivo}; wireframe 0.15; spacefill 20%;`);
+    if (archivo === 'agua.pdb') {
+        Jmol.script(jmolApp, `draw c2_axis vector {0 -1 0} {0 1 0} color yellow width 0.15`);
+    }
+}
+
 
         }
     </script>
