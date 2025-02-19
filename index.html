@@ -24,7 +24,7 @@
         });
 
         function cargarMolecula(archivo) {
-            Jmol.script(jmolApp, `load https://ifp2301.github.io/visor-moleculas-jmol/${archivo}; wireframe 1.5; spacefill 20%;`);
+            Jmol.script(jmolApp, `load https://ifp2301.github.io/visor-moleculas-jmol/${archivo}; set autobond TRUE; wireframe 1.5; spacefill 20%;`);
 
         }
     </script>
