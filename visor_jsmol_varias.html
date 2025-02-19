@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor molecular con JSmol - Múltiples moléculas</title>
+    <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+</head>
+<body>
+    <h2>Visor molecular interactivo con JSmol</h2>
+    <div id="jmoldiv" style="width: 400px; height: 400px; border: 1px solid #ccc;"></div>
+
+    <button onclick="cargarMolecula('agua.pdb')">Cargar Agua</button>
+    <button onclick="cargarMolecula('H2O2.pdb')">Cargar Agua Oxigenada</button>
+    <button onclick="cargarMolecula('NH3.pdb')">Cargar Amoniaco</button>
+    <button onclick="cargarMolecula('benceno.pdb')">Cargar Benceno</button>
+
+    <script type="text/javascript">
+        var jmolApp = Jmol.getApplet("jmoldiv", {
+            width: 400,
+            height: 400,
+            j2sPath: "https://chemapps.stolaf.edu/jmol/jsmol/j2s",
+            script: ""
+        });
+
+        function cargarMolecula(archivo) {
+            Jmol.script(jmolApp, `load ${https://github.com/IFP2301/simetria-molecular.git}; wireframe off; spacefill 20%;`);
+        }
+    </script>
+</body>
+</html>
