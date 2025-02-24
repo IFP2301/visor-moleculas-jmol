@@ -1,0 +1,18 @@
+REMARK   This PDB file was created by CS Chem3D.
+HETATM    1  C           1     -11.194  -0.517  -0.409                      C 
+HETATM    2  Cl          1     -12.131  -2.019  -0.672                      CL
+HETATM    3  Br          1      -9.520  -1.034   0.446                      BR
+HETATM    4  C           1     -11.965   0.538   0.369                      C 
+HETATM    5  Cl          1     -11.028   2.040   0.632                      CL
+HETATM    6  Br          1     -13.639   1.055  -0.487                      BR
+HETATM    7  H           1     -10.913  -0.146  -1.414                      H 
+HETATM    8  H           1     -12.246   0.167   1.374                      H 
+CONECT    1    2    3    4    7
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1    5    6    8
+CONECT    5    4
+CONECT    6    4
+CONECT    7    1
+CONECT    8    4
+END
